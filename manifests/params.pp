@@ -40,6 +40,17 @@ class prometheus::params {
   $haproxy_exporter_package_name = 'haproxy_exporter'
   $haproxy_exporter_user = 'haproxy-user'
   $haproxy_exporter_version = '0.7.1'
+
+  $kafka_exporter_cnf_scrape_uri = 'http://localhost:1234/kafka?stats;csv'
+  $kafka_exporter_download_extension = 'tar.gz'
+  $kafka_exporter_download_url_base = 'https://github.com/prometheus/kafka_exporter/releases'
+  $kafka_exporter_extra_groups = []
+  $kafka_exporter_group = 'kafka-exporter'
+  $kafka_exporter_package_ensure = 'latest'
+  $kafka_exporter_package_name = 'kafka_exporter'
+  $kafka_exporter_user = 'kafka-user'
+  $kafka_exporter_version = '0.7.1'
+
   $process_exporter_download_extension = 'tar.gz'
   $process_exporter_download_url_base = 'https://github.com/ncabatoff/process-exporter/releases'
   $process_exporter_extra_groups = []
